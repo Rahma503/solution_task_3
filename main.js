@@ -4,7 +4,7 @@ function alphatopos(text) {
     t= text.toLowerCase()
            .replace(/[^a-z]/g, '')  //just charachters
            .replace(/[a-z]/g, char => char.charCodeAt(0) - 96) //a=97-96=1 , b=98-96=2 ,....
-           .replace(/(\d{1,2})(?!$)/g, '$1 ');
+           .replace(/(\d{1,2})/g, '$1 ');
    return t
    }
    
